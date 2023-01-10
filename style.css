@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800&display=swap');
+@font-face {
+    font-family: "MontLight";
+    src: url(fonts/Mont-ExtraLightDEMO.otf);
+}
+
+@font-face {
+    font-family: "MontHeavy";
+    src: url(fonts/Mont-HeavyDEMO.otf);
+}
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    display: block;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+.top_advertising {
+    background-color: #11346F;
+    height: 39px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top_advertising .advertising_info_wrapper {
+    max-width: 350px;
+    width: 325px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-transform: uppercase;
+}
+
+.top_advertising .advertising_info_wrapper p {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+/* NavBar */
+.navbar_wrapper .company_brand img {
+    cursor: pointer;
+}
+
+.navbar_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 67px;
+    width: 100%;
+    padding: 0 100px;
+    background: rgba(245, 253, 255, 0.8);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(14px);
+}
+
+.navbar_wrapper .navbar nav {
+    min-width: 515px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar_wrapper .navbar nav a {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: #11346F; 
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.navbar_wrapper .order_button_wrapper button {
+    background: #197AFF;
+    border-radius: 60px;
+    color: white;
+    width: 165px;
+    height: 42px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* HERO CONTAINER */
+
+.hero_container .hero_wrapper {
+    padding: 50px 100px;
+}
+ 
+.hero_container .hero_wrapper .header h1 {
+    color: #213786;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.hero_container .hero_wrapper .header span {
+    font-size: 42px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #197AFF;
+}
+
+.hero_container .hero_wrapper .header h1 {
+    font-size: 42px;
+}
+
+.hero_container .hero_wrapper .header h1 span {
+    position: relative;
+}
+
+.hero_container .hero_wrapper .header img {
+    position: absolute;
+}
+
+.hero_container .hero_wrapper .header .arrow {
+    top: 0;
+    right: -80px;
+}
+
+.hero_container .hero_wrapper .header .straight_lines {
+    right: 0;
+}
+
+
+.hero_wrapper .info_text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 30px 0;
+    width: 55%;
+}
+
+.product_description_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_description {
+    display: flex;
+    background: rgba(174, 204, 255, 0.1);
+    border: 1px solid rgba(174, 204, 255, 0.5);
+    border-radius: 10px;
+    width: 686px;
+    height: 152px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.product_description .card {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    border-left: 1px solid #CEE2FF;
+    padding-left: 22px;
+}
+
+.product_description .card:first-child {
+    border: none;
+}
+
+.product_description .card p {
+    color: #11346F;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+}
+
+.product_description .card ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+}
+
+.product_description .card ul li {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.hero_wrapper .massager {
+    width:391px;
+    height: 241px;
+    margin-top: -70px;
+    margin-right: 30px;
+}
+
+.hero_wrapper .get_product_button button {
+    background: #197AFF;
+    border-radius: 60px;
+    width: 408px;
+    height: 63px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23.91px;
+    align-items: center;
+    border: none;
+}
