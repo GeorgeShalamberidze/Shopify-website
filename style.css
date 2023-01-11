@@ -13,7 +13,7 @@ body,
 html {
   display: block;
   height: 100%;
-  font-family: "Mont", sans-serif;
+  font-family: "Gilroy", sans-serif;
 }
 
 img,
@@ -107,6 +107,7 @@ h6 {
 
 .hero_container .hero_wrapper {
   padding: 50px 100px;
+  background: #FBFBFB;
 }
 
 .hero_container .hero_wrapper .header h1 {
@@ -225,6 +226,15 @@ h6 {
   align-items: center;
   border: none;
   font-style: normal;
+  cursor: pointer;
+}
+
+/* Button and customer review */
+
+.bundle_review_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .button_bundle_wrapper {
@@ -254,16 +264,14 @@ h6 {
 }
 
 .customer_review_card {
-  position: absolute;
   width: 393px;
   height: 81px;
-  left: 965px;
-  top: 599px;
   background: rgba(234, 242, 255, 0.1);
   border: 1px solid rgba(174, 204, 255, 0.5);
   border-radius: 110px;
   display: flex;
   justify-content: space-between;
+  margin-top: 75px;
 }
 
 .customer_review_card img {
@@ -411,7 +419,7 @@ h6 {
 }
 
 .offer_wrapper .offer_cards_container {
-  width: 80%;
+  width: 85%;
   margin: 40px auto 0 auto;
   display: flex;
   justify-content: space-between;
@@ -420,8 +428,11 @@ h6 {
 .offer_wrapper .offer_cards_container .offer_card {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* min-width: 368px; */
   width: 368px;
-  height: 530px;
+  height: 100%;
   border: 1.5px solid #197aff;
   background: rgba(246, 248, 252, 0.7);
   border-radius: 18px;
@@ -432,6 +443,308 @@ h6 {
 }
 
 .offer_wrapper .offer_cards_container .offer_card .massager_small {
-  width: 133px;
   height: 100px;
+  margin-top: -20px;
+}
+
+.offer_wrapper .offer_cards_container .offer_card h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 37px;
+  color: #11346F;
+  margin-top: 63px;
+}
+
+.offer_cards_container .offer_card .card_price {
+  font-weight: 900;
+  font-size: 32px;
+  color: #11346F;
+  margin-top: 20px;
+}
+
+.offer_cards_container .offer_card .freeshipping_text {
+  font-weight: 700;
+  font-size: 14px;
+  color: #11346F;
+  font-family:'Gilroy', sans-serif;
+  margin-top: 5px;
+}
+
+.offer_cards_container .left_card .money_back_30 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 30px 0 50px 0;
+}
+
+.offer_cards_container .left_card .money_back_30 p {
+  font-family:'Gilroy', sans-serif;
+  font-weight: 800;
+  font-size: 13px;
+  color: #11346F;
+}
+
+.offer_cards_container .left_card .different_offer,
+.middle_card .different_offer,
+.right_card .different_offer {
+  display: flex;
+  gap: 5px;
+  color: #11346F;
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+
+.offer_cards_container .left_card .different_offer p,
+.middle_card .different_offer p,
+.right_card .different_offer p {
+  font-weight: 700;
+}
+
+.offer_cards_container .left_card .different_offer span,
+.middle_card .different_offer span,
+.right_card .different_offer span {
+  font-weight: 900;
+}
+
+.offer_card .get_magic_button_wrapper {
+  width: 90%;
+  background: #197AFF;
+  box-shadow: 0px 7px 14px rgba(25, 122, 255, 0.5);
+  border-radius: 60px;
+  height: 53px;
+  border: none;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 18px;
+  font-family: "Mont", sans-serif;
+  cursor: pointer;
+}
+
+.offer_card .get_magic_button_wrapper:hover {
+  opacity: .9;
+}
+
+.offer_card .payment_container {
+  display: flex;
+  margin: 20px 0;
+  gap: 12px;
+}
+
+.offer_card .payment_container .payment_image_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Middle Card */
+.middle_card,
+.right_card {
+  position: relative;
+}
+
+.middle_card .triple_massager {
+  height: 100px;
+  margin-top: -20px;
+}
+
+.middle_card .tilted_arrow,
+.right_card .tilted_arrow {
+  position: absolute;
+  right: 25px;
+  top: 65px;
+  width: 70px;
+}
+
+.middle_card .most_popular,
+.right_card .best_value {
+  background: #57AC73;
+  border-radius: 50px;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 10px 20px;
+  margin: 20px 0 7px 0;
+}
+
+.middle_card .middle_card_offer,
+.right_card .middle_card_offer {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.middle_card .middle_card_offer p,
+.right_card .middle_card_offer p {
+ font-weight: 700; 
+ color: #11346F;
+}
+
+.middle_card .middle_card_offer span,
+.right_card .middle_card_offer span  {
+  font-weight: 800;
+  color: #197AFF;
+  position: relative;
+}
+
+.middle_card .middle_card_offer span img,
+.right_card .middle_card_offer span img,
+.customer_reviews_wrapper h1 span img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.middle_card .prices,
+.right_card .prices  {
+  display: flex;
+  margin: 17px 0 12px 0;
+  gap :15px;
+}
+
+.middle_card .prices .new_price,
+.right_card .prices .new_price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.middle_card .prices .new_price .price,
+.right_card .prices .new_price .price {
+  font-weight: 900;
+  font-size: 32px;
+  color: #11346F;
+}
+
+.middle_card .prices .old_price,
+.right_card .prices .old_price {
+  font-weight: 800;
+  font-size: 32px;
+  color: #93A2BB;
+  text-decoration: line-through;
+}
+
+.prices .new_price .freeshipping_text {
+  margin-top: 4px;
+}
+
+.middle_card .card_benefits,
+.right_card .card_benefits {
+  height: 83px;
+  width: 90%;
+  border: 1px solid #AECCFF;
+  border-radius: 19px;
+}
+
+.middle_card .card_benefits .card_benefits_top,
+.right_card .card_benefits .card_benefits_top {
+  display: flex;
+  position: relative;
+}
+
+.middle_card .card_benefits .sale,
+.right_card .card_benefits .sale {
+  background: #BFF5BE;
+  border: 1px solid #99D298;
+  border-radius: 48px;
+  width: 159px;
+  height: 43px;
+  font-weight: 800;
+  font-size: 12px;
+  color: #11346F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -1px;
+  margin-top: -2px;
+  z-index: 20;
+}
+
+.middle_card .card_benefits .money_back,
+.right_card .card_benefits .money_back {
+  background: #F0F6FF;
+  border: 1px solid #AECCFF;
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+  color: #11346F;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  width: 220px;
+  height: 43px;
+  z-index: 0;
+  gap: 5px;
+}
+
+.card_benefits .order_quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+}
+
+.card_benefits .order_quantity p {
+  font-weight: 800;
+  font-size: 13px;
+  color: #11346F;
+  margin-left: 8px;
+}
+
+.middle_card .middle_button,
+.right_card .right_button {
+  margin: 36px 0 0 0;
+}
+
+.middle_card .middle_offer,
+.right_card .right_offer {
+  margin-bottom: 25px;
+}
+
+/* Right Card */
+.right_card .multiple_massager{
+  margin-top: -20px;
+  height: 100px;
+}
+
+.right_card .best_value {
+  background: #AC5780;
+}
+
+/* Customer review container */
+
+.customer_reviews_container {
+  background: #F6F8FC;
+  width: 100%;
+  height: 722px;
+}
+
+.customer_reviews_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.customer_reviews_wrapper h1 {
+  margin: 50px 0 20px 0;
+  color: #11346F;
+  font-weight: 600;
+  font-size: 37px;
+}
+
+.customer_reviews_wrapper h1 span {
+  font-weight: 800;
+  color: #197AFF;
+  position: relative;
+}
+
+.customer_reviews_wrapper h1 span img {
+  bottom: -5px;
 }
