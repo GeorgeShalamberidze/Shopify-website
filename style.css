@@ -894,6 +894,7 @@ h6 {
   flex-direction: column;
   min-width: 285px;
   max-width: 285px;
+  width: 285px;
   background: #FFFFFF;
   border: 1px solid #E9E9E9;
   border-radius: 10px;
