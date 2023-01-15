@@ -6,33 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="script.js" defer></script>
-    <link href="https://fonts.cdnfonts.com/css/mont" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
   </head>
   <body>
+    <div id="sidebar_menu" class="closed">
+      <img id="close_button" src="./assets/img/close_button.png" alt="close button">
+
+      <ul class="sidebar_list">
+        <li class="sidebar_list_item">
+          <a href="#">Why MagicMessage</a>
+        </li>
+        <li class="sidebar_list_item">
+          <a href="#">Features</a>
+        </li>
+        <li class="sidebar_list_item">
+          <a href="#">Reviews</a>
+        </li>
+        <li class="sidebar_list_item">
+          <a href="#">FAQ</a>
+        </li>
+      </ul>
+    </div>
+
     <div class="top_advertising">
       <div class="advertising_info_wrapper">
         <p class="left_info">spring bundle sale!</p>
         <p class="right_info">use code:spring20</p>
       </div>
     </div>
-    <div class="navbar_wrapper">
-      <div class="company_brand">
-        <a href="#">
-          <img src="./assets/img/brand-logo.png" alt="brand" />
-        </a>
-      </div>
-      <div class="navbar">
-        <nav>
-          <a href="#">Why MagicMessage</a>
-          <a href="#">Features</a>
-          <a href="#">Reviews</a>
-          <a href="#">FAQ</a>
-        </nav>
-      </div>
-      <div class="order_button_wrapper">
-        <button type="button">ORDER NOW</button>
+    <div class="navbar_container">
+      <div class="navbar_wrapper">
+        <div class="company_brand">
+          <a href="#">
+            <img src="./assets/img/brand-logo.png" alt="brand" />
+          </a>
+        </div>
+        <div id="burger_menu">
+          <img src="./assets/img/burger.png" alt="3 lines burger menu">
+        </div>
+        <div class="navbar">
+          <nav>
+            <a class="navbar_item" href="#">Why MagicMessage</a>
+            <a class="navbar_item" href="#">Features</a>
+            <a class="navbar_item" href="#">Reviews</a>
+            <a class="navbar_item" href="#">FAQ</a>
+          </nav>
+        </div>
+  
+        <div class="order_button_wrapper">
+          <button type="button">ORDER NOW</button>
+        </div>
       </div>
     </div>
     <div class="hero_container">
@@ -54,6 +78,12 @@
               />
             </span>
           </h1>
+
+          <img
+          src="./assets/img/massager.png"
+          alt="massager"
+          class="massager_mobile"
+        />
         </div>
 
         <div class="info_text">
@@ -134,7 +164,7 @@
                   <p class="customer_name">Debra N.</p>
                 </div>
   
-                <div class="verified">
+                <div class="verified_blue">
                   <img src="./assets/img/Vector.png" alt="verified" />
                   <p>verified buyer</p>
                 </div>
@@ -379,6 +409,181 @@
           are saying
           <img src="./assets/img/straight_lines.svg" alt="highlight lines">
         </span></h1>
+
+        <div class="stars_and_reviews">
+          <div class="total_reviews">
+            <div class="stars">
+              <img src="./assets/img/star.png" alt="star" />
+              <img src="./assets/img/star.png" alt="star" />
+              <img src="./assets/img/star.png" alt="star" />
+              <img src="./assets/img/star.png" alt="star" />
+              <img src="./assets/img/star.png" alt="star" />
+            </div>
+            <div class="review_amount">
+              131 TOTAL REVIEWS
+            </div>
+          </div>
+
+          <div class="write_review_button">
+            <button class="review_button" type="button">Write a review</button>
+          </div>
+        </div>
+        
+        <div class="customer_review_cards_wrapper">
+          <div class="customer_review_cardboard first">
+            <img src="./assets/img/customer4.png" alt="customer">
+            <div class="customer_star_wrapper">
+              <p class="customer">Megan K.</p>
+              <div class="verified_green">
+                <img src="./assets/img/verified_green.png" alt="verified" />
+                <p class="verified_buyer">verified buyer</p>
+              </div>
+            </div>
+            <div class="stars">
+              <img src="./assets/img/star.png" alt="star" />
+              <img src="./assets/img/star.png" alt="star" />
+              <img src="./assets/img/star.png" alt="star" />
+              <img src="./assets/img/star.png" alt="star" />
+              <img src="./assets/img/star.png" alt="star" />
+            </div>
+            <div class="customer_review_text_wrapper">
+              <p>
+                I love the MagicMassage! It’s simple to use, does not mess up my curly hair as many other similar products do, and the massage is relaxing as it is refreshing. I feel like it has been made for my scalp! It just feels right.
+              </p>
+            </div>
+          </div>
+          <div class="customer_review_cardboard second">
+            <img src="./assets/img/customer3.png" alt="customer">
+            <div class="customer_star_wrapper">
+              <p class="customer">Megan K.</p>
+              <div class="verified_green">
+                <img src="./assets/img/verified_green.png" alt="verified" />
+                <p class="verified_buyer">verified buyer</p>
+              </div>
+            </div>
+            <div class="stars">
+              <img src="./assets/img/star.png" alt="star" />
+              <img src="./assets/img/star.png" alt="star" />
+              <img src="./assets/img/star.png" alt="star" />
+              <img src="./assets/img/star.png" alt="star" />
+              <img src="./assets/img/star.png" alt="star" />
+            </div>
+            <div class="customer_review_text_wrapper">
+              <p>
+                I could not be happier with this product! I use it at night to relax and it does wonders for me. My kids and dog also love it, they’ll sit and let me massage their scalp for hours. At first my Labrador was hesitant not knowing what it was, but now she gets excited as soon as I take the MagicMassage out.
+              </p>
+            </div>
+          </div>
+          <div class="customer_review_cardboard third">
+            <img src="./assets/img/customer2.png" alt="customer">
+            <div class="customer_star_wrapper">
+              <p class="customer">Megan K.</p>
+              <div class="verified_green">
+                <img src="./assets/img/verified_green.png" alt="verified" />
+                <p class="verified_buyer">verified buyer</p>
+              </div>
+            </div>
+            <div class="stars">
+              <img src="./assets/img/star.png" alt="star" />
+              <img src="./assets/img/star.png" alt="star" />
+              <img src="./assets/img/star.png" alt="star" />
+              <img src="./assets/img/star.png" alt="star" />
+              <img src="./assets/img/star.png" alt="star" />
+            </div>
+            <div class="customer_review_text_wrapper">
+              <p>
+                It arrived in perfect condition, and the packaging was immaculate. It felt amazing on my head, like someone was massaging it with the perfect pressure and speed. My long hair doesn't get caught in it at all, and I feel relaxed after using it. Best purchase I’ve made in a LONG time!
+              </p>
+            </div>
+          </div>
+          <div class="customer_review_cardboard fourth">
+            <img src="./assets/img/customer1.png" alt="customer">
+            <div class="customer_star_wrapper">
+              <p class="customer">Megan K.</p>
+              <div class="verified_green">
+                <img src="./assets/img/verified_green.png" alt="verified" />
+                <p class="verified_buyer">verified buyer</p>
+              </div>
+            </div>
+            <div class="stars">
+              <img src="./assets/img/star.png" alt="star" />
+              <img src="./assets/img/star.png" alt="star" />
+              <img src="./assets/img/star.png" alt="star" />
+              <img src="./assets/img/star.png" alt="star" />
+              <img src="./assets/img/star.png" alt="star" />
+            </div>
+            <div class="customer_review_text_wrapper">
+              <p>
+                I could not love this massager more. I use it for scalp stimulation during showers as it feels great to massage with shampoo. I love that it's light enough to carry it with me when I travel and comfortable to use. The product looks luxurious and would recommend this to anyone looking for a high quality head massager.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq_container">
+      <h1 class="faq_header">
+        Frequently Asked <span>
+          Questions
+          <img src="./assets/img/white_highlight.png" alt="highlight lines white">
+        </span>
+      </h1>
+
+      <div class="faq_wrapper">
+        <img id="customer4small" src="./assets/img/customer_wide.png" alt="customer">
+
+        <div class="question_answer_wrapper">
+          <div class="faqs">
+            <div class="question_section">
+              <p>How long does the battery last fully charged?</p>
+              <img class="carrot" src="./assets/img/carrot_down.png" alt="arrow carrot up">
+            </div>
+  
+            <div class="answer_section">
+              <p>The MagicMassage™ can last up to 6 hours when it's fully charged.</p>
+            </div>
+          </div>
+  
+          <div class="faqs">
+            <div class="question_section">
+              <p>Can I use it in the shower?</p>
+              <img class="carrot" src="./assets/img/carrot_down.png" alt="arrow carrot down">
+            </div>
+
+            <div class="answer_section">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo in cum non praesentium?</p>
+            </div>
+          </div>
+
+          <div class="faqs">
+            <div class="question_section">
+              <p>What is included in the package</p>
+              <img class="carrot" src="./assets/img/carrot_down.png" alt="arrow carrot down">
+            </div>
+
+            <div class="answer_section">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo in cum non praesentium?</p>
+            </div>
+          </div>
+
+          <div class="faqs">
+            <div class="question_section">
+              <p>Is the MagicMassage™ designed only for the head?</p>
+              <img class="carrot" src="./assets/img/carrot_down.png" alt="arrow carrot down">
+            </div>
+
+            <div class="answer_section">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo in cum non praesentium?</p>
+            </div>
+          </div>
+
+          <div class="all_faq_wrapper">
+            <p>See All FAQ</p>
+            <img src="./assets/img/carrot_down_white.png" alt="white arrow down">
+          </div>
+
+        </div>
       </div>
     </div>
   </body>
