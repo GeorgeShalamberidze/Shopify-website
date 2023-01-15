@@ -897,6 +897,7 @@ h6 {
   border: 1px solid #E9E9E9;
   border-radius: 10px;
   margin-bottom: 40px;
+  cursor: pointer;
 }
 
 .customer_review_cardboard .customer_star_wrapper {

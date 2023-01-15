@@ -35,12 +35,6 @@ for (let i = 0; i < faq.length; i++) {
     })
 }
 
-// window.addEventListener('resize', () => {
-//     if (window.innerWidth < 500) {
-//         customer4.src = "./assets/img/cursomter4_small.png"
-//     }
-// })
-
 burgerButton.addEventListener('click', () => {
     sidebarMenu.classList.remove('closed')
 })
