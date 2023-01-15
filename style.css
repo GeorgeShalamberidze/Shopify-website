@@ -892,14 +892,20 @@ h6 {
 .customer_review_cards_wrapper .customer_review_cardboard {
   display: flex;
   flex-direction: column;
-  min-width: 285px;
-  max-width: 285px;
-  width: 285px;
+
   background: #FFFFFF;
   border: 1px solid #E9E9E9;
   border-radius: 10px;
   margin-bottom: 40px;
   cursor: pointer;
+}
+
+.customer_review_cardboard.first,
+.customer_review_cardboard.second,
+.customer_review_cardboard.third,
+.customer_review_cardboard.fourth {
+  min-width: 285px;
+  max-width: 285px;
 }
 
 .customer_review_cardboard .customer_star_wrapper {
