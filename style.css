@@ -892,7 +892,7 @@ h6 {
 .customer_review_cards_wrapper .customer_review_cardboard {
   display: flex;
   flex-direction: column;
-  width: 285px;
+  min-width: 285px;
   background: #FFFFFF;
   border: 1px solid #E9E9E9;
   border-radius: 10px;
