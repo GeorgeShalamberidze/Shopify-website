@@ -815,7 +815,30 @@ h6 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
 
+.customer_reviews_wrapper .pagination {
+  display: flex;
+  gap: 10px;
+  display: none;
+}
+
+.customer_reviews_wrapper .pagination .pagination_dot {
+  background-image: url("./assets/img/dot.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+} 
+
+.customer_reviews_wrapper .pagination .pagination_dot.active_dot {
+  background-image: url("./assets/img/active_dot.png");
+}
+
+.customer_reviews_wrapper .pagination div {
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .customer_reviews_wrapper h1 {
@@ -896,7 +919,7 @@ h6 {
   background: #FFFFFF;
   border: 1px solid #E9E9E9;
   border-radius: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 
@@ -1253,6 +1276,10 @@ h6 {
 @media only screen and (max-width: 550px) {
   .order_button_wrapper {
     display: none;
+  }
+
+  .customer_reviews_wrapper .pagination {
+    display: flex;
   }
   
   .hero_container .hero_wrapper .header h1,
